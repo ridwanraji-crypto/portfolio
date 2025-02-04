@@ -4,13 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RIDOSKI PORTFOLIO</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+    #faq {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .faq-item {
+        background-color: blue;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(26, 6, 211, 0.874);
+        color: white;
+    }
+    
+    .faq-question {
+        padding: 15px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .faq-question h3 {
+        margin: 0;
+        color: white;
+        font-size: 35px;
+    }
+    
+    .faq-question span {
+        font-size: 30px;
+        color: white;
+    }
+    
+    .faq-answer {
+        padding: 0 15px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        font-size: larger;
+    }
+    
+    .faq-answer p {
+        margin: 10px 0;
+        color: white;
+    }
+    
+    .faq-item.active .faq-answer {
+        max-height: 500px;
+    }
+
+    @media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-menu input[type="button"] {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.map-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+}
+</style>
+    
 </head>
 <body>
-    <div id="home" style="background-color: blue; width: 1520px; height: 500px;">
+    <div id="home" style="background-color: blue; width: 100%; min-height: 100vh;">
         <div>
             <h1 style="color: white;">RIDOSKI</h1>
-            <ol style="justify-content: center; text-align: center; gap: 1rem; display: flex;">
+            <ol style="gap: 1rem; display: flex;">
                 <a href="#home"><input type="button" value="HOME" style="color: blue; cursor: pointer; background-color: white;font-size: x-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; height: 40px; width: 85px; border-radius: 10px;"></a>
                 <a href="#about"><input type="button" value="ABOUT" style="color: blue; cursor: pointer; background-color: white;font-size: x-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; height: 40px; width: 85px; border-radius: 10px;"></a>
                 <a href="#service"><input type="button" value="SERVICE" style="color: blue; cursor: pointer; background-color: white;font-size: x-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; height: 40px; width: 100px; border-radius: 10px;"></a>
@@ -45,13 +124,12 @@
                             
                     </div>
                     <div style="  text-align: center;">
-                        <img src="/3005bfad19368aa436276e5faae5fc66-1036x688.jpg" alt="Software Development" width="800px">
+                        <img src="/3005bfad19368aa436276e5faae5fc66-1036x688.jpg" alt="Software Development" style="max-width: 100%; height: auto;">
                     </div>
                 </div>
             </div> <br>
 
-
-                <div style="background-color: #fff; padding: 20px; box-shadow: 0 2px 5px rgba(4, 35, 210, 0.966);">
+            <div style="background-color: #fff; padding: 20px; box-shadow: 0 2px 5px rgba(4, 35, 210, 0.966);">
                     <div style="max-width: 960px; margin: 0 auto;">
             
                         <div id="service">
@@ -88,10 +166,7 @@
                     </div>
                 </div> <br>
 
-
-
-
-                <div style="background-color: #fff; padding: 20px; box-shadow: 0 2px 5px rgba(51, 5, 234, 0.916);">
+                <div style="background-color: white; padding: 20px; box-shadow: 0 2px 5px rgba(51, 5, 234, 0.916);">
                             <h2 style="color: blue; text-align: center; font-size: 40px;">WHAT SETS ME APART</h2>
 
                             <div style="text-align: center;">
@@ -107,9 +182,9 @@
                                 </div>
 
                             </div>
-            </div> <br>
+            </div> <br>   
 
-            <div style="background-color: #fff; padding: 20px; box-shadow: 0 2px 5px rgba(10, 28, 226, 0.933);">
+            <div style="background-color: white; padding: 20px; box-shadow: 0 2px 5px rgba(10, 28, 226, 0.933);">
             <div id="faq">
                 <h1 style="color: blue; text-align: center; font-size: 50px;">FAQ</h1>
         

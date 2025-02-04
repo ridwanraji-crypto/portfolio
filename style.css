@@ -45,5 +45,5 @@
 }
 
 .faq-item.active .faq-answer {
-    max-height: 500px; /* Adjust as needed */
+    max-height: 500px;
 }
